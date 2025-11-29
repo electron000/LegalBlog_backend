@@ -26,11 +26,13 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# ADDED: http://localhost:5173 to the list below
+# --- CORS CONFIGURATION UPDATED ---
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://ai-legalmate.vercel.app", 
+        "https://ai-legalmate.vercel.app",  # Production Main (HTTPS)
+        "http://ai-legalmate.vercel.app",   # Production Fallback (HTTP)
+        "http://localhost:5173",            # Local Development
     ],
     allow_credentials=True,
     allow_methods=["*"],
