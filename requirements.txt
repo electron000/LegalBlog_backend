@@ -6,4 +6,3 @@ pydantic==2.12.3
 python-dotenv==1.2.1
 SQLAlchemy==2.0.44
 uvicorn==0.38.0
-asyncpg
