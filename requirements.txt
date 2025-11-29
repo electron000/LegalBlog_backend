@@ -1,0 +1,8 @@
+asyncpg==0.30.0
+fastapi==0.120.2
+langchain==0.3.27
+langchain-google-genai==2.0.10
+pydantic==2.12.3
+python-dotenv==1.2.1
+SQLAlchemy==2.0.44
+uvicorn==0.38.0

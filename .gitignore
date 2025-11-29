@@ -1,0 +1,81 @@
+# ==========================
+# USER DEFINED (Your existing rules)
+# ==========================
+pdf/mfa_agreement.pdf
+mfa_agreement.pdf
+mfa_agreement.docx
+.history/
+docs
+
+# ==========================
+# VIRTUAL ENVIRONMENTS
+# ==========================
+# These patterns match any folder named 'venv' or '.venv' 
+# inside any of your microservice directories.
+venv/
+.venv/
+env/
+ENV/
+*.venv
+
+# ==========================
+# ENVIRONMENT VARIABLES & SECRETS
+# ==========================
+# Ignores .env files in root and all subdirectories
+.env
+.env.*
+!.env.example
+
+# ==========================
+# PYTHON RUNTIME & BYTECODE
+# ==========================
+# Ignores __pycache__ directories everywhere
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================
+# IDE & EDITOR CONFIGS
+# ==========================
+# VS Code (User requested to ignore)
+.vscode/
+*.code-workspace
+
+# JetBrains / PyCharm
+.idea/
+
+# Mac/Linux/Windows temporary editor files
+*.swp
+*.swo
+*~
+
+# ==========================
+# OS GENERATED FILES
+# ==========================
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+
+# ==========================
+# DISTRIBUTION / BUILD / LOGS (Standard for other devs)
+# ==========================
+build/
+dist/
+develop-eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing artifacts
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Logs
+*.log
+
+# Ignore Vector Databases
+*.sqlite3
+**/chroma_db/
