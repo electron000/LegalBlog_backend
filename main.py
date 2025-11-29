@@ -30,7 +30,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://ai-legalmate.vercel.app", 
+        "https://ai-legalmate.vercel.app/", 
         "http://127.0.0.1:5173", 
         "http://localhost:5173"
     ],
